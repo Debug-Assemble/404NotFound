@@ -1,0 +1,108 @@
+<html>
+<head><title>login form</title>
+<style type="text/css">
+.button1{background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+border-radius:10px;
+}
+.bg2 {
+ 
+  background-image: url("background4.jpg");
+
+  background-size:530px,530px;
+  background-position: right;
+  background-repeat: no-repeat;
+  
+}
+.input1
+{
+ text-align:center;
+width:50%;
+height:45px;
+font-size:17px;
+border-radius:10px;
+}
+.input44
+{
+  text-align:center;
+width:50%;
+height:45px;
+font-size:15px;
+ border-radius:10px;
+}
+
+.box{
+    margin:12px;
+    height:600px;
+    width:700px;
+    border:4px;
+    border-style:solid;
+    border-color:grey;
+    border-radius:10px;
+    
+  }
+ @media (max-width:450px)
+ {
+   .box{
+     margin:9px;
+    height:530px;
+    width:380px;
+    border:2px;
+    border-style:solid;
+    border-color:grey;
+    border-radius:8px;
+   }
+   .image1{
+     height:180px;
+     width:180px;
+   }
+  }
+</style>
+<script language="javascript">
+function clicking()
+{
+var a=f1.t1.value;
+var b=f1.t12.value;
+l1=a.length;
+l2=b.length;
+if(l1!=l2)
+{
+alert("Both the password must be same");
+}
+if(l1<=10)
+{
+alert("Please enter a password which should be atleast 10 character long");
+}
+else
+{
+alert("User Validated.Continue shopping by clicking on the buttons alongside.");
+}
+}
+</script>
+</head>
+<body class="bg2">
+<center>
+ <div class="box">
+    
+  
+<form method="post" name="f1">
+<font face="Arial Rounded MT" size="5" color="black"><b>
+ <br> 
+<img src="image.jpeg" height="250" width="250" bordercolor="black", class="image1">
+
+ 
+ <br><br><input type="textbox"  size="20"    placeholder="Username" class="input1"><br><br>
+  <input type="password" size="20"   placeholder="Password" class="input44" id="pasrd" name="t1"><br><br>
+<input type="password" size="20"   placeholder="Confirm the password" class="input44" id="pasrd" name="t12"><br><br>
+ <input type="submit" name="click1" value="LOG IN" class="button1" onclick="clicking()">   
+ 
+<input type="reset" name="click2" value="RESET" class="button1"></font>
+</form></font><font size="4" color="midnightblue"><br><br>
+  </div>
+</center>  
+</body>
+</html>
